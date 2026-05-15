@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="african_green">#2B5F4A</color>
+    <color name="kente_gold">#E8860A</color>
+    <color name="terracotta">#C94A2C</color>
+    <color name="warm_ivory">#FDF8F2</color>
+    <color name="soft_sage">#EAF3EF</color>
+    <color name="dark_charcoal">#1A1A1A</color>
+    <color name="mid_grey">#777777</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card_border">#E8E0D4</color>
+    <color name="form_field_bg">#F5F0EA</color>
+    <color name="colorPrimary">#2B5F4A</color>
+    <color name="colorPrimaryDark">#1E4435</color>
+    <color name="colorAccent">#E8860A</color>
+</resources>

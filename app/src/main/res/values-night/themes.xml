@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NextChapter" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/african_green</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/kente_gold</item>
+        <item name="android:windowBackground">@color/warm_ivory</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="HeaderStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/african_green</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/african_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/african_green</item>
+        <item name="android:textColor">@color/african_green</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <style name="FormField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/form_field_bg</item>
+        <item name="boxStrokeColor">@color/card_border</item>
+        <item name="hintTextColor">@color/mid_grey</item>
+        <item name="android:textColorHint">@color/mid_grey</item>
+    </style>
+</resources>

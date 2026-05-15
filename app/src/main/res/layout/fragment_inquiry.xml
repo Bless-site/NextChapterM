@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warm_ivory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/african_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/btn_back_inquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="← Back"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:paddingEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Send Inquiry"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="4dp" android:background="@color/kente_gold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Book reference card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_book_ref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:background="@color/soft_sage"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:id="@+id/tv_inquiry_book_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/dark_charcoal" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tv_inquiry_seller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/mid_grey" android:textSize="11sp" />
+                        <TextView android:id="@+id/tv_inquiry_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/african_green" android:textSize="11sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Message input -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Message *" android:textColor="@color/dark_charcoal" android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_message"
+                style="@style/FormField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hi, I&#39;m interested in your book…"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:gravity="top" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Quick templates -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick Templates" android:textColor="@color/dark_charcoal" android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="8dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_template_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_field_bg"
+                    android:padding="12dp"
+                    android:text="&quot;Is this still available?&quot;"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_template_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_field_bg"
+                    android:padding="12dp"
+                    android:text="&quot;Can we meet on campus?&quot;"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_template_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_field_bg"
+                    android:padding="12dp"
+                    android:text="&quot;Can you do a lower price?&quot;"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <!-- Contact preference -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contact Preference" android:textColor="@color/dark_charcoal" android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_contact_pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+                <RadioButton android:id="@+id/rb_in_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="In-App Chat" android:textColor="@color/dark_charcoal" android:checked="true" android:layout_marginEnd="12dp" />
+                <RadioButton android:id="@+id/rb_whatsapp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WhatsApp" android:textColor="@color/dark_charcoal" android:layout_marginEnd="12dp" />
+                <RadioButton android:id="@+id/rb_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:textColor="@color/dark_charcoal" />
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_send_inquiry_submit"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_inquiry" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel_inquiry"
+                style="@style/SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cancel" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

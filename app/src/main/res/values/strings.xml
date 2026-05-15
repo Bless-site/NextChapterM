@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NextChapter</string>
+    <string name="app_tagline">Student Textbook Exchange</string>
+    <string name="register">CREATE ACCOUNT</string>
+    <string name="login">Already have an account? Log In</string>
+    <string name="full_name">Full Name</string>
+    <string name="student_email">Student Email</string>
+    <string name="password">Password</string>
+    <string name="institution">Institution</string>
+    <string name="search_hint">Search books, courses…</string>
+    <string name="recent_listings">Recent Listings</string>
+    <string name="view">View</string>
+    <string name="add_book">Add Book Listing</string>
+    <string name="submit_listing">SUBMIT LISTING</string>
+    <string name="send_inquiry">SEND INQUIRY</string>
+    <string name="book_title_hint">e.g. Principles of Economics</string>
+    <string name="author_hint">e.g. N. Gregory Mankiw</string>
+    <string name="course_hint">e.g. ECO 201</string>
+    <string name="price_hint">R 0.00</string>
+    <string name="description_hint">Describe the book\'s condition and any notes…</string>
+    <string name="error_required">This field is required</string>
+    <string name="error_email">Enter a valid student email</string>
+    <string name="error_price">Enter a valid price</string>
+    <string name="error_password">Password must be at least 8 characters</string>
+</resources>
